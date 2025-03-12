@@ -13,6 +13,8 @@ A modular voice assistant platform with pluggable specialized agents and natural
 - 🐦 Twitter automation for social media management
 - ✍️ Blog post automation for content creation
 - 🔌 Electron-based UI for desktop integration
+### Disclaimer: 
+Some of our agents and voice commands processing are yet to be implemented.
 
 ## Setup Instructions
 
@@ -141,6 +143,9 @@ python -m pytest test_agent.py -v
 # Run natural language agent tests
 python test_nlp_agent.py
 ```
+
+## Plans
+In the future, I hope to create an agentic framework so anyone can build agents for my AgentOS and use them freely or, if they want, even commit to them. Please feel free to reach out if you have ideas to share about this project of mine, I'd love to discuss and get constructive criticism and make this better with time.
 
 ## License
 
