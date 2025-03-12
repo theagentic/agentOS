@@ -1,0 +1,184 @@
+/* Twitter Panel Styles */
+
+.twitter-panel {
+    position: relative;
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: var(--bg-secondary);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.twitter-panel h3 {
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+    display: flex;
+    align-items: center;
+}
+
+.twitter-panel h3 svg {
+    margin-right: 8px;
+    color: #1DA1F2; /* Twitter blue */
+}
+
+.twitter-panel .twitter-content {
+    position: relative;
+}
+
+.twitter-panel .status-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.twitter-panel .status-row:last-child {
+    border-bottom: none;
+}
+
+.twitter-panel .status-label {
+    font-weight: 500;
+    margin-right: 1rem;
+}
+
+.twitter-panel .status-value {
+    text-align: right;
+    flex-grow: 1;
+}
+
+/* Status colors */
+.twitter-panel .status-ok {
+    color: var(--color-success);
+}
+
+.twitter-panel .status-warning {
+    color: var(--color-warning);
+}
+
+.twitter-panel .status-error {
+    color: var(--color-danger);
+}
+
+.twitter-panel .status-unknown {
+    color: var(--color-muted);
+}
+
+.twitter-panel .twitter-thread-link {
+    margin-top: 1rem;
+}
+
+.twitter-panel .twitter-thread-link a {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #1DA1F2;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: background-color 0.2s;
+}
+
+.twitter-panel .twitter-thread-link a:hover {
+    background-color: #0c8cd9;
+}
+
+/* Loading state */
+.twitter-panel.loading .twitter-content {
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+.twitter-panel.loading::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 24px;
+    height: 24px;
+    border: 3px solid rgba(0,0,0,0.1);
+    border-radius: 50%;
+    border-top-color: #1DA1F2;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+/* Error state */
+.twitter-panel.error .twitter-content > *:not(.twitter-error):not(.twitter-diagnostics) {
+    display: none;
+}
+
+.twitter-panel .twitter-error {
+    padding: 1rem;
+    border-radius: 4px;
+    background-color: rgba(255, 0, 0, 0.05);
+    border: 1px solid var(--color-danger-subtle);
+}
+
+.twitter-panel .twitter-error h4 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    color: var(--color-danger);
+}
+
+.twitter-panel .twitter-error p {
+    margin: 0;
+    white-space: pre-line;
+    font-family: monospace;
+    font-size: 0.9rem;
+}
+
+/* Diagnostics section */
+.twitter-panel .twitter-diagnostics {
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.05);
+    border: 1px solid var(--border-color);
+}
+
+.twitter-panel .twitter-diagnostics h4 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    color: var(--color-primary);
+}
+
+.twitter-panel .twitter-diagnostics p {
+    margin: 0.25rem 0;
+    font-family: monospace;
+    font-size: 0.9rem;
+}
+
+/* Refresh button */
+.twitter-panel .refresh-button {
+    padding: 0.25rem 0.5rem;
+    background: transparent;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: var(--text-color);
+}
+
+.twitter-panel .refresh-button:hover {
+    background-color: var(--bg-hover);
+}
+
+.twitter-panel .refresh-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.twitter-panel .refresh-button svg {
+    width: 16px;
+    height: 16px;
+}

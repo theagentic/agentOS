@@ -1,0 +1,11 @@
+# Core dependencies
+tweepy>=4.12.0
+google-generativeai>=0.3.0
+python-dotenv>=1.0.0
+watchdog>=3.0.0
+flask>=2.0.0
+
+# Optional utilities (but not required)
+# backoff>=2.2.1  # Currently not used, custom retry logic is implemented
+markdown==3.5.1
+PyYAML==6.0.1

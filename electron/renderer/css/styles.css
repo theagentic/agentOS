@@ -1,0 +1,712 @@
+:root {
+  --primary-color: #0066cc;
+  --secondary-color: #009933;
+  --system-color: #cc6600;
+  --background-color: #f5f5f5;
+  --card-background: #ffffff;
+  --border-color: #e0e0e0;
+  --text-color: #333333;
+  --light-text: #777777;
+  --splitter-color: #dddddd;
+  --splitter-hover-color: #bbbbbb;
+  
+  /* Light Theme Colors */
+  --light-background: #ffffff;
+  --light-card: #f7f7f8;
+  --light-text: #2d3748;
+  --light-border: #e2e8f0;
+  --light-accent: #4a5568;
+  --light-primary: #2b6cb0;
+  --light-secondary: #38a169;
+  --light-system: #d97706;
+  
+  /* Dark Theme Colors */
+  --dark-background: #0f0f0f;
+  --dark-card: #1a1a1a;
+  --dark-text: #e2e8f0;
+  --dark-border: #2d3748;
+  --dark-accent: #4a5568;
+  --dark-primary: #3b82f6;
+  --dark-secondary: #10b981;
+  --dark-system: #f59e0b;
+  
+  /* Default theme (starts with dark) */
+  --background: var(--dark-background);
+  --card: var(--dark-card);
+  --text: var(--dark-text);
+  --border: var(--dark-border);
+  --accent: var(--dark-accent);
+  --primary: var(--dark-primary);
+  --secondary: var(--dark-secondary);
+  --system: var(--dark-system);
+
+  /* Logo Colors */
+  --logo-accent: #3b82f6;  /* blue shade */
+  --logo-text: var(--dark-text);
+  
+  /* Chat UI Variables */
+  --chat-bubble-user: #1e88e5;
+  --chat-bubble-assistant: var(--dark-card);
+  --chat-bubble-system: var(--dark-card);
+  --chat-text-user: white;
+  --chat-border-radius: 18px;
+}
+
+/* Theme Classes */
+.light-theme {
+  --background: var(--light-background);
+  --card: var(--light-card);
+  --text: var(--light-text);
+  --border: var(--light-border);
+  --accent: var(--light-accent);
+  --primary: var(--light-primary);
+  --secondary: var(--light-secondary);
+  --system: var(--light-system);
+  --logo-text: var(--light-text);
+  --chat-bubble-assistant: #f0f0f0;
+  --chat-bubble-system: #f5f5f5;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--background);
+  color: var(--text);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.app-container {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+  background-color: var(--background);
+  height: calc(100vh - 57px); /* Subtract top pane height */
+}
+
+/* Left Pane Styles - Fixed containment */
+.left-pane {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid var(--border);
+  background-color: var(--background);
+  max-width: 70%;  /* Prevent excessive width */
+  min-width: 320px; /* Ensure minimum usable width */
+  width: 0; /* Force containment */
+  overflow: hidden; /* Prevent content overflow */
+  transition: max-width 0.3s ease;
+}
+
+/* Full width left pane when developer mode is off */
+body:not(.developer-mode) .left-pane {
+  max-width: 100%;
+  flex: 1;
+}
+
+.conversation-container {
+  flex: 1;
+  overflow-y: auto;
+  padding: 16px;
+  scroll-behavior: smooth;
+  margin-right: 1px; /* Prevent content from touching splitter */
+  width: 100%; /* Force width containment */
+}
+
+/* Modern message styling */
+.message {
+  margin-bottom: 16px;
+  max-width: 80%;
+  padding: 12px 16px;
+  border-radius: var(--chat-border-radius);
+  line-height: 1.5;
+  overflow-wrap: break-word;
+  position: relative;
+  animation: fadeIn 0.3s ease;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.user-message {
+  background-color: var(--chat-bubble-user);
+  color: var(--chat-text-user);
+  margin-left: auto;
+  border-radius: var(--chat-border-radius) 0 var(--chat-border-radius) var(--chat-border-radius);
+}
+
+.assistant-message {
+  background-color: var(--chat-bubble-assistant);
+  margin-right: auto;
+  border-radius: 0 var(--chat-border-radius) var(--chat-border-radius) var(--chat-border-radius);
+}
+
+.system-message {
+  background-color: var(--chat-bubble-system);
+  border-left: 3px solid var(--system);
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 90%;
+  border-radius: 8px;
+  font-style: italic;
+  color: var(--light-text);
+}
+
+/* Modern input container */
+.input-container {
+  display: flex;
+  padding: 12px 16px;
+  background-color: var(--card);
+  border-top: 1px solid var(--border);
+  position: relative;
+}
+
+#message-input {
+  flex: 1;
+  padding: 12px 16px;
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  background-color: var(--background);
+  color: var(--text);
+  font-size: 14px;
+  resize: none;
+  max-height: 150px;
+  line-height: 1.5;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#message-input:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+}
+
+.button-container {
+  display: flex;
+  align-items: flex-end;
+  margin-left: 8px;
+}
+
+.input-action-button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--primary);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-left: 8px;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.input-action-button svg {
+  width: 20px;
+  height: 20px;
+  color: white;
+}
+
+.input-action-button:hover {
+  background-color: var(--dark-primary);
+  transform: scale(1.05);
+}
+
+.input-action-button:active {
+  transform: scale(0.95);
+}
+
+button:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+/* Right Pane Styles */
+.right-pane {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background);
+  transition: flex 0.3s ease, width 0.3s ease, opacity 0.3s ease;
+  overflow: hidden;
+}
+
+/* Hide right pane when developer mode is off */
+body:not(.developer-mode) .right-pane {
+  flex: 0;
+  width: 0;
+  opacity: 0;
+}
+
+.execution-log {
+  flex: 1;
+  overflow-y: auto;
+  padding: 16px;
+  font-family: 'Fira Code', monospace;
+  font-size: 12px;
+  line-height: 1.5;
+  background-color: var(--card);
+  border-radius: 4px;
+  margin: 12px 12px 0 12px;
+  color: var(--text);
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+
+.status-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 16px;
+  background-color: var(--card);
+  border-top: 1px solid var(--border);
+  margin: 8px 12px 12px 12px;
+  border-radius: 4px;
+}
+
+/* Settings dropdown */
+.settings-dropdown {
+  position: relative;
+}
+
+.settings-button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: var(--text);
+  transition: transform 0.2s;
+}
+
+.settings-button:hover {
+  transform: rotate(30deg);
+}
+
+.settings-menu {
+  position: absolute;
+  right: 0;
+  top: 100%;
+  background-color: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  width: 240px;
+  z-index: 1000;
+  padding: 12px;
+  margin-top: 4px;
+  display: none;
+}
+
+.settings-menu.active {
+  display: block;
+  animation: fadeIn 0.2s ease;
+}
+
+.settings-section {
+  margin-bottom: 10px;
+}
+
+.settings-section h3 {
+  font-size: 14px;
+  margin: 0 0 8px 0;
+  color: var(--text);
+  padding-left: 12px;
+}
+
+.settings-divider {
+  height: 1px;
+  background-color: var(--border);
+  margin: 8px 0;
+}
+
+.settings-item {
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  border-radius: 4px;
+}
+
+.settings-item:hover {
+  background-color: var(--background);
+}
+
+.settings-item span {
+  margin-left: 12px;
+  font-size: 14px;
+}
+
+/* Toggle switch styling */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 22px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--border);
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: var(--primary);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px var(--primary);
+}
+
+input:checked + .slider:before {
+  transform: translateX(18px);
+}
+
+.slider.round {
+  border-radius: 24px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* Splitter with toggle button */
+.splitter-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.splitter {
+  width: 5px;
+  background-color: var(--splitter-color);
+  cursor: col-resize;
+  transition: background-color 0.2s;
+  height: 100%;
+}
+
+.splitter:hover {
+  background-color: var(--splitter-hover-color);
+}
+
+/* Toggle sidebar button */
+.toggle-sidebar {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  right: -12px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  transition: transform 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+body.developer-mode .toggle-sidebar {
+  transform: translateY(-50%) rotate(180deg);
+}
+
+/* Hide splitter when developer mode is off */
+body:not(.developer-mode) .splitter {
+  display: none;
+}
+
+.action-button {
+  background-color: transparent;
+  border: 1px solid var(--border);
+  color: var(--text);
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.action-button:hover {
+  background-color: var(--primary);
+  color: white;
+  border-color: var(--primary);
+}
+
+.action-button:active {
+  transform: scale(0.98);
+}
+
+.actions-container {
+  display: flex;
+  gap: 8px;
+}
+
+/* Status indicator */
+.status-container {
+  display: flex;
+  align-items: center;
+}
+
+.status-indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.status-indicator.connected {
+  background-color: var(--secondary);
+  box-shadow: 0 0 8px var(--secondary);
+}
+
+.status-indicator.disconnected {
+  background-color: #f44336;
+  box-shadow: 0 0 8px #f44336;
+}
+
+.status-indicator.connecting {
+  background-color: var(--system);
+  box-shadow: 0 0 8px var(--system);
+  animation: pulse 1.5s infinite;
+}
+
+#status-message {
+  font-size: 12px;
+}
+
+/* Top pane styling */
+.top-pane {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  background-color: var(--card);
+  border-bottom: 1px solid var(--border);
+  height: 32px;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.logo-agent {
+  color: var(--logo-accent);
+}
+
+.logo-os {
+  color: var(--logo-text);
+}
+
+/* Animation definitions */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse {
+  0% { opacity: 1; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--border);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--accent);
+}
+
+/* Code blocks in messages */
+pre {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  padding: 12px;
+  overflow-x: auto;
+  font-family: 'Fira Code', monospace;
+  font-size: 13px;
+}
+
+code {
+  font-family: 'Fira Code', monospace;
+  font-size: 13px;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+/* Log entries */
+.log-entry {
+  margin-bottom: 6px;
+  line-height: 1.4;
+}
+
+.log-timestamp {
+  color: var(--accent);
+  font-weight: 500;
+}
+
+.log-info {
+  color: var(--text);
+}
+
+.log-warning {
+  color: var(--system);
+}
+
+.log-error {
+  color: #e53e3e;
+}
+
+.log-success {
+  color: var(--secondary);
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .app-container {
+    flex-direction: column;
+  }
+  
+  .splitter {
+    display: none;
+  }
+  
+  .left-pane, .right-pane {
+    max-width: 100%;
+    width: 100%;
+  }
+  
+  .toggle-sidebar {
+    display: none;
+  }
+
+  .left-pane {
+    height: 60%;
+  }
+
+  .right-pane {
+    height: 40%;
+    border-top: 1px solid var(--border);
+    border-left: none;
+  }
+}
+
+/* Model Selector Dropdown */
+.model-selector {
+  width: 100%;
+  padding: 8px 10px;
+  background-color: var(--background);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  color: var(--text);
+  font-size: 14px;
+  cursor: pointer;
+  appearance: none;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>');
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  transition: border-color 0.3s;
+}
+
+.model-selector:hover {
+  border-color: var(--primary);
+}
+
+.model-selector:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+}
+
+/* Enhanced model selection UI */
+.model-selection-container {
+  margin-top: 8px;
+}
+
+.model-status {
+  font-size: 12px;
+  margin-top: 6px;
+  padding: 0 12px;
+  color: var(--light-text);
+}
+
+.model-status.error {
+  color: #e53e3e;
+}
+
+.model-status.success {
+  color: var(--secondary);
+}
+
+.model-status.loading {
+  color: var(--primary);
+  animation: pulse 1.5s infinite;
+}
+
+.model-info {
+  margin-top: 8px;
+  font-size: 12px;
+  color: var(--light-text);
+  padding: 0 12px;
+}
+
+.model-action-button {
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 4px 8px;
+  font-size: 12px;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.model-action-button:hover {
+  background-color: var(--dark-primary);
+}

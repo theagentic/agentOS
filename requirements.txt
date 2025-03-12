@@ -1,0 +1,33 @@
+# AgentOS Core Dependencies
+PyQt5>=5.15.0           # UI framework
+pyttsx3>=2.90           # Text-to-speech engine
+SpeechRecognition>=3.8.0 # Speech recognition
+pyaudio>=0.2.11         # Audio processing for speech recognition
+
+# File Management Dependencies
+pathlib>=1.0.1          # Path manipulation utilities
+python-dateutil>=2.8.2  # Date manipulation
+watchdog>=3.0.0         # File system monitoring 
+tqdm>=4.65.0            # Progress bars
+cryptography>=41.0.1    # Backup encryption
+
+# Scheduling & Time Management
+schedule>=1.2.0         # Task scheduling
+todoist-api-python>=2.0.0  # Todoist integration
+
+# Communication & APIs
+requests>=2.28.0        # HTTP requests
+tweepy>=4.14.0          # Twitter API
+spotipy>=2.23.0         # Spotify API
+
+# Environment & Configuration
+python-dotenv>=1.0.0    # Environment variable management
+PyYAML>=6.0.1           # YAML configuration support
+
+# AI & Text Processing
+google-generativeai>=0.3.1  # Google AI integration for Gemini models
+markdown>=3.5.1         # Markdown processing
+tenacity>=8.2.3         # Retry logic for API calls
+
+# Logging & Debugging
+colorlog>=6.7.0         # Colorized logging output

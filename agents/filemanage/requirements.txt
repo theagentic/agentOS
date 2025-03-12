@@ -1,0 +1,10 @@
+# Core dependencies
+pathlib>=1.0.1
+python-dateutil>=2.8.2
+
+# Optional enhancements
+schedule>=1.2.0  # For more advanced scheduling capabilities
+watchdog>=3.0.0  # For real-time file system monitoring
+colorlog>=6.7.0  # For colorized logging output
+tqdm>=4.65.0     # For progress bars during large file operations
+cryptography>=41.0.1  # For backup encryption features

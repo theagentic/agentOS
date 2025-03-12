@@ -1,0 +1,18 @@
+spotify:
+  client_id: 0b138b9aaf9b48d1a96f7fce4d1565a8
+  client_secret: 053242b7ab204ec68a2642f88077a11a
+  redirect_uri: http://localhost:8888/callback
+  scope: playlist-modify-public playlist-read-private playlist-modify-private
+
+# Map artists to their playlist IDs
+artist_playlists:
+  "Arijit Singh": "7MSg0mqDtnmOEHcaw9ZkmZ"
+  "Linkin Park": "1nvJdObClNPD5VqW9IJJrG"
+
+# How many days back to check for new releases
+lookback_days: 7
+
+# Logging configuration
+logging:
+  level: INFO
+  file: logs/spotiauto.log

@@ -1,0 +1,4 @@
+spotipy==2.23.0
+pyyaml==6.0.1
+schedule==1.2.0
+tenacity==8.2.3

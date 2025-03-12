@@ -1,0 +1,85 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+venv/
+.venv/
+*.pyc
+.coverage
+htmlcov/
+coverage.xml
+.tox/
+
+# Node.js and Electron
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+package-lock.json
+out/
+dist/
+electron-out/
+.eslintcache
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+**/.env
+
+# Logs and data
+logs/
+*.log
+data/
+bridge_debug.log
+*.tmp
+*.bak
+*.swp
+*.pid
+
+# IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+.history/
+*.sublime-*
+.project
+.classpath
+.settings/
+*.code-workspace
+
+# OS specific
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# AgentOS specific
+processed_repos.json
+preferences.json
+**/credentials.json
+**/*.secret
+temp/

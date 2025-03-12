@@ -1,0 +1,38 @@
+{
+  "organize": {
+    "target_directory": "~/Downloads",
+    "file_type_folders": {
+      ".jpg": "Images",
+      ".jpeg": "Images",
+      ".png": "Images",
+      ".gif": "Images",
+      ".pdf": "Documents/PDFs",
+      ".docx": "Documents/Word",
+      ".xlsx": "Documents/Excel",
+      ".txt": "Text Files",
+      ".zip": "Archives",
+      ".rar": "Archives"
+    },
+    "organize_schedule": "hourly"
+  },
+  "backup": {
+    "backup_sources": ["~/Downloads", "~/Documents/ImportantProject"],
+    "backup_destination": "~/Backups",
+    "backup_schedule": "daily",
+    "backup_naming_convention": "AutomatedBackup_YYYY-MM-DD_HH-MM-SS.zip",
+    "encrypt_backups": false
+  },
+  "clean": {
+    "clean_directories": ["~/Downloads", "~/Temp"],
+    "access_time_threshold_days": 90,
+    "size_threshold_mb": 50,
+    "file_type_exclusions": [".exe", ".dll"],
+    "safe_delete": true,
+    "trash_folder_name": ".file_trash",
+    "clean_schedule": "weekly"
+  },
+  "logging": {
+    "log_file": "file_manager.log",
+    "log_level": "INFO"
+  }
+}

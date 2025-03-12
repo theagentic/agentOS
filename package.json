@@ -1,0 +1,63 @@
+{
+  "name": "agentos",
+  "version": "1.0.0",
+  "description": "AgentOS Voice Assistant with Electron frontend and Python backend",
+  "main": "electron/main.js",
+  "scripts": {
+    "prestart": "node scripts/prestart.js",
+    "start": "cross-env NODE_ENV=development electron .",
+    "dev": "cross-env NODE_ENV=development nodemon --exec electron . --dev",
+    "install-python": "pip install -r requirements.txt -r requirements-electron.txt",
+    "build": "electron-builder",
+    "wait-debug": "wait-on http://localhost:5000"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^25.3.0",
+    "electron-builder": "^24.4.0",
+    "electron-devtools-installer": "^3.2.0",
+    "electron-reload": "^1.5.0",
+    "nodemon": "^3.0.1",
+    "wait-on": "^7.0.1"
+  },
+  "dependencies": {
+    "electron-log": "^4.4.8",
+    "highlight.js": "^11.8.0",
+    "node-fetch": "^3.3.0",
+    "python-shell": "^5.0.0",
+    "socket.io-client": "^4.6.1",
+    "cross-env": "^7.0.3",
+    "ws": "^8.13.0"
+  },
+  "build": {
+    "appId": "com.agentos.app",
+    "files": [
+      "electron/**/*",
+      "python/**/*",
+      "!**/node_modules/*/{CHANGELOG.md,README.md,README,readme.md,readme}",
+      "!**/node_modules/*/{test,__tests__,tests,powered-test,example,examples}",
+      "!**/node_modules/.bin",
+      "!**/*.{iml,o,hprof,orig,pyc,pyo,rbc,swp,csproj,sln,xproj}",
+      "!.editorconfig",
+      "!**/._*",
+      "!**/{.DS_Store,.git,.hg,.svn,CVS,RCS,SCCS,__pycache__,thumbs.db,.gitignore,.gitattributes}"
+    ],
+    "extraResources": [
+      {
+        "from": "python",
+        "to": "python",
+        "filter": ["**/*"]
+      }
+    ],
+    "win": {
+      "target": "nsis"
+    },
+    "mac": {
+      "target": "dmg"
+    },
+    "linux": {
+      "target": "AppImage"
+    }
+  }
+}
