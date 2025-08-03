@@ -1,22 +1,153 @@
-# AgentOS
+# <p align="center">AgentOS</p>
 
-A modular voice assistant platform with pluggable specialized agents and natural language understanding.
+<p align="center">
+   
+<div align="center"> 
+    <h1> 
+        <img src="https://readme-typing-svg.herokuapp.com?font=Jetbrains+mono&size=25&duration=3200&color=4FC3F7&center=true&vCenter=true&width=600&lines=Welcome+to+AgentOS!;Your+Modular+AI+Assistant!;Voice+%26+Text+Interface!;Pluggable+Agent+Architecture!;Build+Your+Own+Agents!;AI-Powered+Automation!" alt="Typing SVG"/> 
+    </h1>
+</div>
 
-## Features
+<div align="center">
+<p>
 
-- 🎤 Voice and text interface with conversational AI
-- 🧩 Modular agent architecture for extensibility
-- 🧠 Natural language understanding to translate user requests
-- 📅 Todoist integration for task management
-- 📁 File management capabilities
-- 🎵 Spotify integration for music control
-- 🐦 Twitter automation for social media management
-- ✍️ Blog post automation for content creation
-- 🔌 Electron-based UI for desktop integration
+[![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
+![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat)
+![Visitors](https://api.visitorbadge.io/api/visitors?path=theagentic%2FagentOS%20&countColor=%23263759&style=flat)
+<!-- ![GitHub forks](https://img.shields.io/github/forks/theagentic/agentOS) -->
+<!-- ![GitHub Repo stars](https://img.shields.io/github/stars/theagentic/agentOS) -->
+<!-- ![GitHub last commit](https://img.shields.io/github/last-commit/theagentic/agentOS) -->
+<!-- ![GitHub repo size](https://img.shields.io/github/repo-size/theagentic/agentOS) -->
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+<!-- ![GitHub pull requests](https://img.shields.io/github/issues-pr/theagentic/agentOS) -->
+
+</p>
+</div>
+
+<h2>Hi there👋, Welcome to the World of AI Agents </h2>
+
+<p>Hello Developers!!👨‍💻<br> AgentOS is a modular voice assistant platform with pluggable specialized agents and natural language understanding. Join us in building the future of AI automation!</p>
+
+<div id="top"></div>
+<!--line-->
+<img src="https://www.animatedimages.org/data/media/562/animated-line-image-0184.gif" width="1920" />
+
+<h2>Table of Contents🧾</h2>
+
+- [Overview📌](#overview)
+- [Features🌟](#features)
+- [Technology Used🚀](#technology-used)
+- [Getting Started💥](#getting-started)
+- [Agent Configuration⚙️](#agent-configuration)
+- [Directory Structure📁](#directory-structure)
+- [Development🔧](#development)
+- [Contributing Guidelines📑](#contributing-guidelines)
+- [Code Of Conduct📑](#code-of-conduct)
+- [Project Admin⚡](#project-admin)
+- [Contributing is fun🧡](#contributing-is-fun)
+
+<br>
+<!--line-->
+<img src="https://www.animatedimages.org/data/media/562/animated-line-image-0184.gif" width="1920" />
+
+<h2>Overview📌</h2>
+<p>AgentOS is a modular voice assistant platform designed for extensibility and automation. With pluggable specialized agents and natural language understanding, it serves as a comprehensive AI assistant framework. Whether you're managing tasks, controlling music, automating social media, or handling files, AgentOS provides the foundation for intelligent automation. We welcome all contributions to make this an amazing platform for developers and users alike! 🚀</p>
+
 ### Disclaimer: 
-Some of our agents and voice commands processing are yet to be implemented.
+Some of our agents and voice commands processing are yet to be implemented. We're actively working on these features and would love your help!
 
-## Setup Instructions
+<!--line-->
+<img src="https://www.animatedimages.org/data/media/562/animated-line-image-0184.gif" width="1920" />
+
+## Features🌟
+
+- **🎤 Voice & Text Interface**: Conversational AI with both voice and text input capabilities for natural interaction.
+
+- **🧩 Modular Agent Architecture**: Extensible plugin system allowing developers to create custom agents for specific tasks.
+
+- **🧠 Natural Language Understanding**: Intelligent translation of user requests into actionable commands across different agents.
+
+- **📅 Task Management**: Todoist integration for comprehensive task management, reminders, and productivity tracking.
+
+- **📁 File Management**: Advanced file system navigation and manipulation capabilities for efficient file handling.
+
+- **🎵 Music Control**: Spotify integration for seamless music control, search, and playlist management.
+
+- **🐦 Social Media Automation**: Twitter bot functionality for automated posting, thread creation, and timeline monitoring.
+
+- **✍️ Content Creation**: Automated blog post generation from repositories and other content sources.
+
+- **🔌 Desktop Integration**: Electron-based UI providing a native desktop experience.
+
+- **⚡ Real-time Processing**: Fast and responsive agent communication with efficient message routing.
+
+- **🔧 Developer-Friendly**: Template-based agent creation system for rapid development and deployment.
+
+<!--line-->
+<img src="https://www.animatedimages.org/data/media/562/animated-line-image-0184.gif" width="1920" />
+
+<h2>Technology Used🚀</h2>
+
+<img height=50 src="https://skillicons.dev/icons?i=python,js,html,css,electron,git" >
+
+<p align="right"><a href="#top"><img src="https://img.shields.io/badge/Move%20to%20top-Blue?style=plastic" alt="Back To Top"></a></p>
+
+<!--line-->
+<img src="https://www.animatedimages.org/data/media/562/animated-line-image-0184.gif" width="1920" />
+
+<h2>Getting Started💥</h2>
+
+## How to make a Pull Request?
+
+**1.** Start by forking the [**AgentOS**](https://github.com/theagentic/agentOS) repository. Click on the <a href="https://github.com/theagentic/agentOS/fork"><img src="https://i.imgur.com/G4z1kEe.png" height="21" width="21"></a> symbol at the top right corner.
+
+**2.** Clone your forked repository:
+
+```bash
+git clone https://github.com/<your-github-username>/agentOS
+```
+
+**3.** Navigate to the new project directory:
+
+```bash
+cd agentOS
+```
+
+**4.** Set upstream command:
+
+```bash
+git remote add upstream https://github.com/theagentic/agentOS
+```
+
+**5.** Create a new branch:
+
+```bash
+git checkout -b YourBranchName
+```
+
+<i>or</i>
+
+```bash
+git branch YourBranchName
+git switch YourBranchName
+```
+
+**6.** Sync your fork or local repository with the origin repository:
+
+- In your forked repository click on `Fetch upstream`.
+- Click `Fetch and merge`.
+
+### Alternatively, Git CLI way to Sync forked repository with origin repository:
+
+```bash
+git fetch upstream
+```
+
+```bash
+git merge upstream/main
+```
+
+### [Github Docs](https://docs.github.com/en/github/collaborating-with-pull-requests/addressing-merge-conflicts/resolving-a-merge-conflict-on-github) for Syncing
 
 ### 1. Install Requirements
 
@@ -49,7 +180,31 @@ cp .env.example .env
 # Edit the .env file with your API credentials
 ```
 
-### 4. Run the Application
+**7.** Make your changes to the source code.
+
+**8.** Stage your changes and commit:
+
+⚠️ **Make sure** not to commit sensitive configuration files like `.env`
+
+⚠️ **Make sure** not to run the commands `git add .` or `git add *`. Instead, stage your changes for each file/folder
+
+```bash
+git add file/folder
+```
+
+```bash
+git commit -m "<your_commit_message>"
+```
+
+**9.** Push your local commits to the remote repository:
+
+```bash
+git push origin YourBranchName
+```
+
+**10.** Create a [Pull Request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request)!
+
+**11.** Run the Application
 
 ```bash
 # Run the standard version
@@ -59,7 +214,14 @@ python main.py
 python electron_main.py
 ```
 
-## Agent Configuration
+ **Congratulations! You've made your first contribution! 🙌🏼**
+
+<p align="right"><a href="#top"><img src="https://img.shields.io/badge/Move%20to%20top-Blue?style=plastic" alt="Back To Top"></a></p>
+
+<!--line-->
+<img src="https://www.animatedimages.org/data/media/562/animated-line-image-0184.gif" width="1920" />
+
+<h2>Agent Configuration⚙️</h2>
 
 ### Natural Language Agent
 - **Functionality**: Translates natural language into commands for other agents
@@ -92,7 +254,10 @@ python electron_main.py
 - **Requirements**: None
 - Configuration: Configure allowed directories in the main `.env` file
 
-## Directory Structure
+<!--line-->
+<img src="https://www.animatedimages.org/data/media/562/animated-line-image-0184.gif" width="1920" />
+
+<h2>Directory Structure📁</h2>
 
 ```
 AgentOS/
@@ -121,7 +286,10 @@ AgentOS/
 └── setup.py               # Installation script
 ```
 
-## Development
+<!--line-->
+<img src="https://www.animatedimages.org/data/media/562/animated-line-image-0184.gif" width="1920" />
+
+<h2>Development🔧</h2>
 
 ### Creating a New Agent
 
@@ -144,9 +312,91 @@ python -m pytest test_agent.py -v
 python test_nlp_agent.py
 ```
 
-## Plans
-In the future, I hope to create an agentic framework so anyone can build agents for my AgentOS and use them freely or, if they want, even commit to them. Please feel free to reach out if you have ideas to share about this project of mine, I'd love to discuss and get constructive criticism and make this better with time.
+<!--line-->
+<img src="https://www.animatedimages.org/data/media/562/animated-line-image-0184.gif" width="1920" />
+
+<h2>Contributing Guidelines📑</h2>
+
+We welcome contributions from developers of all skill levels! Whether you're fixing bugs, adding new features, creating new agents, or improving documentation, your contributions help make AgentOS better for everyone.
+
+### Ways to Contribute
+
+- 🐛 **Bug Fixes**: Help us identify and fix issues
+- ✨ **New Features**: Add new functionality to existing agents
+- 🤖 **New Agents**: Create entirely new agents for different use cases
+- 📚 **Documentation**: Improve our docs and help others understand the project
+- 🧪 **Testing**: Write tests to ensure code quality and reliability
+- 🎨 **UI/UX**: Enhance the user interface and experience
+
+### Getting Started with Contributing
+
+1. Check out our [Issues](https://github.com/theagentic/agentOS/issues) page for tasks labeled `good first issue`
+2. Read our [Contributing Guidelines](https://github.com/theagentic/agentOS/blob/main/CONTRIBUTING.md) for detailed instructions
+3. Join our community discussions and ask questions
+
+<h2>Code Of Conduct📑</h2>
+
+This project and everyone participating in it are governed by our [Code of Conduct](https://github.com/theagentic/agentOS/blob/main/CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code. Please report unacceptable behavior to the project maintainers.
+
+</br>
+<p align = "center">
+Show some ❤️&nbsp; by giving <img src="https://imgur.com/o7ncZFp.jpg" height=25px width=25px> to this repository.
+</p>
+
+<div align="center">
+
+<!--line-->
+<img src="https://www.animatedimages.org/data/media/562/animated-line-image-0184.gif" width="1920" />
+
+# Project Admin⚡
+ 
+<table>
+<tr>
+<td align="center"><a href="https://github.com/theagentic"><img src="https://github.com/theagentic.png" width=150px height=150px /></a></br> <h4 style="color:red;">Team theagentic</h4>
+ <a href="https://github.com/theagentic"><img src="https://img.icons8.com/fluency/2x/github.png" width="32px" height="32px"></img></a>
+   </td>
+
+<td align="center"><a href="https://github.com/RanL703"><img src="https://github.com/RanL703.png" width=150px height=150px /></a></br> <h4 style="color:red;">Ranadeep Laskar</h4>
+ <a href="https://github.com/RanL703"><img src="https://img.icons8.com/fluency/2x/github.png" width="32px" height="32px"></img></a>
+   </td>
+</tr>
+</table>
+  
+</div>
+
+<!--line-->
+<img src="https://www.animatedimages.org/data/media/562/animated-line-image-0184.gif" width="1920" />
+
+## Plans🚀
+
+In the future, we hope to create an agentic framework so anyone can build agents for AgentOS and use them freely or, if they want, even contribute to the main project. Please feel free to reach out if you have ideas to share about this project - we'd love to discuss and get constructive criticism to make this better with time.
+
+## Contributing is fun🧡
+<p align ="center">
+  <img src="https://github.com/theagentic/agentOS/assets/placeholder/contributing-fun.gif" width="700" height= "250" />
+</p>
+
+<!--line-->
+<img src="https://www.animatedimages.org/data/media/562/animated-line-image-0184.gif" width="1920" />
+
+## Acknowledgements
+
+Thank you to all the amazing contributors who have made this project possible! 💝
+
+<a href="https://github.com/theagentic/agentOS/graphs/contributors">
+  <img align="center" src="https://contrib.rocks/image?max=100&repo=theagentic/agentOS" />
+</a> 
+<br><br>
+
+<!--line-->
+<img src="https://www.animatedimages.org/data/media/562/animated-line-image-0184.gif" width="1920" />
 
 ## License
 
 MIT
+
+<p align="center">
+  <img src="https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge" alt="License: MIT">
+</p>
+
+<p align="right"><a href="#top"><img src="https://img.shields.io/badge/Move%20to%20top-Blue?style=plastic" alt="Back To Top"></a></p>
