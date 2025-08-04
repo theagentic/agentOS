@@ -383,19 +383,9 @@ In the future, we hope to create an agentic framework so anyone can build agents
 
 Thank you to all the amazing contributors who have made this project possible! 💝
 
-<div align="center">
-<table>
-<tr>
-<td align="center">
-<a href="https://github.com/theagentic">
-<img src="https://github.com/theagentic.png" width="100px;" alt="theagentic"/>
-<br />
-<sub><b>theagentic</b></sub>
-</a>
-</td>
-</tr>
-</table>
-</div>
+<a href="https://github.com/theagentic/agentOS/graphs/contributors">
+  <img align="center" src="https://contrib.rocks/image?max=100&repo=theagentic/agentOS" />
+</a> 
 <br><br>
 
 <!--line-->
