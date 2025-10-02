@@ -26,7 +26,8 @@
 
 <h2>Hi there👋, Welcome to the World of AI Agents </h2>
 
-<p>Hello Developers!!👨‍💻<br> AgentOS is a modular voice assistant platform with pluggable specialized agents and natural language understanding. Join us in building the future of AI automation!</p>
+<p>Hello Developers!!👨‍💻<br> 
+   AgentOS is a modular voice assistant platform with pluggable specialized agents and natural language understanding. Join us in shaping the future of AI automation!</p>
 
 <div id="top"></div>
 <!--line-->
@@ -42,9 +43,10 @@
 - [Directory Structure📁](#directory-structure)
 - [Development🔧](#development)
 - [Contributing Guidelines📑](#contributing-guidelines)
-- [Code Of Conduct📑](#code-of-conduct)
+- [Code Of Conduct📜](#code-of-conduct)
 - [Project Admin⚡](#project-admin)
-- [Contributing is fun🧡](#contributing-is-fun)
+- [Contributing is fun 🧡](#contributing-is-fun)
+- [Acknowledgements 🙏](#acknowledgements)
 
 <br>
 <!--line-->
@@ -62,25 +64,15 @@ Some of our agents and voice commands processing are yet to be implemented. We'r
 ## Features🌟
 
 - **🎤 Voice & Text Interface**: Conversational AI with both voice and text input capabilities for natural interaction.
-
 - **🧩 Modular Agent Architecture**: Extensible plugin system allowing developers to create custom agents for specific tasks.
-
 - **🧠 Natural Language Understanding**: Intelligent translation of user requests into actionable commands across different agents.
-
 - **📅 Task Management**: Todoist integration for comprehensive task management, reminders, and productivity tracking.
-
 - **📁 File Management**: Advanced file system navigation and manipulation capabilities for efficient file handling.
-
 - **🎵 Music Control**: Spotify integration for seamless music control, search, and playlist management.
-
 - **🐦 Social Media Automation**: Twitter bot functionality for automated posting, thread creation, and timeline monitoring.
-
 - **✍️ Content Creation**: Automated blog post generation from repositories and other content sources.
-
 - **🔌 Desktop Integration**: Electron-based UI providing a native desktop experience.
-
 - **⚡ Real-time Processing**: Fast and responsive agent communication with efficient message routing.
-
 - **🔧 Developer-Friendly**: Template-based agent creation system for rapid development and deployment.
 
 <!--line-->
@@ -97,7 +89,7 @@ Some of our agents and voice commands processing are yet to be implemented. We'r
 
 <h2>Getting Started💥</h2>
 
-## How to make a Pull Request?
+## How to Make a Pull Request
 
 **1.** Start by forking the [**AgentOS**](https://github.com/theagentic/agentOS) repository. Click on the <a href="https://github.com/theagentic/agentOS/fork"><img src="https://i.imgur.com/G4z1kEe.png" height="21" width="21"></a> symbol at the top right corner.
 
@@ -329,13 +321,11 @@ We welcome contributions from developers of all skill levels! Whether you're fix
 - 🎨 **UI/UX**: Enhance the user interface and experience
 
 ### Getting Started with Contributing
-
 1. Check out our [Issues](https://github.com/theagentic/agentOS/issues) page for tasks labeled `good first issue`
 2. Read our [Contributing Guidelines](https://github.com/theagentic/agentOS/blob/main/CONTRIBUTING.md) for detailed instructions
 3. Join our community discussions and ask questions
 
 <h2>Code Of Conduct📑</h2>
-
 This project and everyone participating in it are governed by our [Code of Conduct](https://github.com/theagentic/agentOS/blob/main/CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code. Please report unacceptable behavior to the project maintainers.
 
 </br>
@@ -369,7 +359,7 @@ Show some ❤️&nbsp; by giving <img src="https://imgur.com/o7ncZFp.jpg" height
 
 ## Plans🚀
 
-In the future, we hope to create an agentic framework so anyone can build agents for AgentOS and use them freely or, if they want, even contribute to the main project. Please feel free to reach out if you have ideas to share about this project - we'd love to discuss and get constructive criticism to make this better with time.
+In the future, we hope to create an agentic framework so anyone can build agents for AgentOS and use them freely or, if they want, even contribute to the main project. Please feel free to reach out if you have ideas to share about this project - we'd love to discuss and get constructive criticism to make this better over time.
 
 ## Contributing is fun🧡
 <p align ="center">
@@ -393,7 +383,7 @@ Thank you to all the amazing contributors who have made this project possible! �
 
 ## License
 
-MIT
+This project is licensed under the [MIT License](https://github.com/theagentic/agentOS/blob/main/LICENSE).
 
 <p align="center">
   <img src="https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge" alt="License: MIT">
