@@ -361,7 +361,7 @@ Show some ❤️&nbsp; by giving <img src="https://imgur.com/o7ncZFp.jpg" height
 
 In the future, we hope to create an agentic framework so anyone can build agents for AgentOS and use them freely or, if they want, even contribute to the main project. Please feel free to reach out if you have ideas to share about this project - we'd love to discuss and get constructive criticism to make this better over time.
 
-## Contributing is fun🧡
+## Contributing is fun 🧡
 <p align ="center">
   <img src="https://github.com/theagentic/agentOS/assets/placeholder/contributing-fun.gif" width="700" height= "250" />
 </p>
@@ -369,18 +369,14 @@ In the future, we hope to create an agentic framework so anyone can build agents
 <!--line-->
 <img src="https://www.animatedimages.org/data/media/562/animated-line-image-0184.gif" width="1920" />
 
-## Acknowledgements
+---
+## ✨ Contributors
 
-Thank you to all the amazing contributors who have made this project possible! 💝
+#### Thanks to all the wonderful contributors 💖
 
-<a href="https://github.com/theagentic/agentOS/graphs/contributors">
-  <img align="center" src="https://contrib.rocks/image?max=100&repo=theagentic/agentOS" />
-</a> 
-<br><br>
+[![Contributors](https://contrib.rocks/image?repo=theagentic/agentOS)](https://github.com/theagentic/agentOS/graphs/contributors)
 
-<!--line-->
-<img src="https://www.animatedimages.org/data/media/562/animated-line-image-0184.gif" width="1920" />
-
+---
 ## License
 
 This project is licensed under the [MIT License](https://github.com/theagentic/agentOS/blob/main/LICENSE).
