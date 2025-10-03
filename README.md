@@ -362,12 +362,24 @@ Show some ❤️&nbsp; by giving <img src="https://imgur.com/o7ncZFp.jpg" height
 In the future, we hope to create an agentic framework so anyone can build agents for AgentOS and use them freely or, if they want, even contribute to the main project. Please feel free to reach out if you have ideas to share about this project - we'd love to discuss and get constructive criticism to make this better over time.
 
 ## Contributing is fun🧡
-<p align ="center">
-  <img src="https://github.com/theagentic/agentOS/assets/placeholder/contributing-fun.gif" width="700" height= "250" />
-</p>
+<!-- Placeholder for future contributing-fun.gif -->
+<!-- <p align="center">
+  <img src="https://github.com/theagentic/agentOS/assets/placeholder/contributing-fun.gif" width="700" height="250" />
+</p> -->
 
-<!--line-->
-<img src="https://www.animatedimages.org/data/media/562/animated-line-image-0184.gif" width="1920" />
+We’re always excited to welcome new contributors! 🎉  
+Pick issues labeled **`good first issue`** to get started quickly.  
+
+Some ideas you could suggest or build:
+
+- 📝 **Improving AI prompt engineering** for our natural-language agent  
+- 🧮 **Adding ingredient density data** or other useful datasets for agent skills  
+- 🎨 **Enhancing UI components or responsiveness** across the Electron & web interfaces  
+- 🧪 **Adding more tests** for existing agents to keep quality high  
+- ⚙️ **Creating entirely new pluggable agents** for fresh use-cases  
+
+Your creativity makes AgentOS better for everyone. 🚀
+
 
 ## Acknowledgements
 
