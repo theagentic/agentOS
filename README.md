@@ -368,7 +368,7 @@ In the future, we hope to create an agentic framework so anyone can build agents
 </p> -->
 
 We’re always excited to welcome new contributors! 🎉  
-Pick issues labeled **`good first issue`** to get started quickly.  
+Pick issues labeled **`good first issue`** to get started quickly.
 
 Some ideas you could suggest or build:
 
