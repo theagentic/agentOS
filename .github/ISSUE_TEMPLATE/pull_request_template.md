@@ -45,5 +45,3 @@ Fixes #(issue_number)
 ## 📋 Additional Notes
 
 <!-- Add any additional context, concerns, or information about the PR here -->
-
-
