@@ -34,22 +34,51 @@
 
 <img src="https://www.animatedimages.org/data/media/562/animated-line-image-0184.gif" width="1920" />
 
-## 🌟GSSoc 
-![GSSoC Logo](https://github.com/dimpal-yadav/agentOS/blob/add-gssoc-banner/GSSoC.png)
-🌟 **Exciting News...**
+## 🌟 GirlScript Summer of Code 2025 (GSSoC'25) 🎉  
 
-🚀 This project is now an official part of GirlScript Summer of Code – GSSoC'25! 💃🎉💻 We're thrilled to welcome contributors from all over India and beyond to collaborate, build, and grow *agentOS!* Let’s make learning and career development smarter – together! 🌟👨‍💻👩‍💻
+<p align="center">
+  <img src="https://raw.githubusercontent.com/dimpal-yadav/agentOS/add-gssoc-banner/GSSoC.png" alt="GSSoC 2025 Banner" width="750"/>
+</p>
 
-👩‍💻 GSSoC is one of India’s **largest 3-month-long open-source programs** that encourages developers of all levels to contribute to real-world projects 🌍 while learning, collaborating, and growing together. 🌱
+<p align="center">
+  <img alt="GSSoC'25" src="https://img.shields.io/badge/GSSoC-2025-orange?style=for-the-badge" />
+  <img alt="Open Source" src="https://img.shields.io/badge/Open%20Source-%E2%9D%A4-blue?style=for-the-badge" />
+  <img alt="PRs Welcome" src="https://img.shields.io/badge/PRs-Welcome-brightgreen?style=for-the-badge" />
+</p>
 
-🌈 With **mentorship, community support**, and **collaborative coding**, it's the perfect platform for developers to:
+---
 
-- ✨ Improve their skills
-- 🤝 Contribute to impactful projects
-- 🏆 Get recognized for their work
-- 📜 Receive certificates and swag!
+### ✨ Exciting News...  
 
-🎉 **I can’t wait to welcome new contributors** from GSSoC 2025 to this agentOS project family! Let's build, learn, and grow together — one commit at a time. 🔥👨‍💻👩‍💻
+🚀 **AgentOS is officially part of GirlScript Summer of Code 2025!** 🥳💻  
+We’re super excited to welcome contributors from **all across India & beyond 🌍** to collaborate, build, and grow **AgentOS** together.  
+
+GSSoC is **India’s largest 3-month long open-source program**, designed to:  
+- 🌱 Help developers **learn, build & grow** through real-world projects  
+- 💡 Provide **mentorship & guidance** at every step  
+- 🤝 Foster **collaborative coding** & teamwork  
+- 🎁 Reward contributors with **certificates, swag, and recognition**  
+
+---
+
+### 🌈 Why join AgentOS @ GSSoC’25?  
+
+By contributing here, you’ll get to:  
+- ✨ Improve your **AI, automation & voice assistant skills**  
+- 🛠️ Work on **modular agents & pluggable architecture**  
+- 🏆 Showcase your contributions & get recognized  
+- 📜 Earn **certificates & swags** while learning!  
+
+---
+
+### 💖 Call to Action  
+
+🎉 We **can’t wait to welcome new contributors** from GSSoC’25 into the **AgentOS family**!  
+Let’s **build, learn & grow — one commit at a time.** 🔥👩‍💻👨‍💻  
+
+<p>
+  Made with ❤️ for <b>GSSoC'25</b>
+</p>
 
 <!--line-->
 <img src="https://www.animatedimages.org/data/media/562/animated-line-image-0184.gif" width="1920" />
