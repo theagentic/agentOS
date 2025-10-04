@@ -606,35 +606,7 @@ code {
   color: var(--secondary);
 }
 
-/* Media queries for responsiveness */
-@media (max-width: 768px) {
-  .app-container {
-    flex-direction: column;
-  }
-  
-  .splitter {
-    display: none;
-  }
-  
-  .left-pane, .right-pane {
-    max-width: 100%;
-    width: 100%;
-  }
-  
-  .toggle-sidebar {
-    display: none;
-  }
 
-  .left-pane {
-    height: 60%;
-  }
-
-  .right-pane {
-    height: 40%;
-    border-top: 1px solid var(--border);
-    border-left: none;
-  }
-}
 
 /* Model Selector Dropdown */
 .model-selector {
@@ -709,4 +681,92 @@ code {
 
 .model-action-button:hover {
   background-color: var(--dark-primary);
+}
+
+/* ✅ Make container scale with screen */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* ✅ Make all images scale properly */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ✅ Make buttons and inputs scale */
+button, input {
+  max-width: 100%;
+  font-size: 1rem;
+}
+
+/* ✅ Fix text wrapping issues */
+h1, h2, h3, p {
+  word-wrap: break-word;
+}
+
+
+/* Tablets and below */
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+    padding: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .card, .section {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 480px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .title {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  button {
+    width: 100%;
+    font-size: 1rem;
+  }
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .navbar ul {
+    flex-direction: column;
+    gap: 10px;
+  }
 }
