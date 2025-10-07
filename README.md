@@ -34,7 +34,7 @@
 
 <img src="https://www.animatedimages.org/data/media/562/animated-line-image-0184.gif" width="1920" />
 
-## 🌟 GirlScript Summer of Code 2025 (GSSoC'25) 🎉  
+## 🌟 GirlScript Summer of Code 2025 (GSSoC'25) 
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/dimpal-yadav/agentOS/add-gssoc-banner/GSSoC.png" alt="GSSoC 2025 Banner" width="750"/>
@@ -46,12 +46,10 @@
   <img alt="PRs Welcome" src="https://img.shields.io/badge/PRs-Welcome-brightgreen?style=for-the-badge" />
 </p>
 
----
-
 ### ✨ Exciting News...  
 
-🚀 **AgentOS is officially part of GirlScript Summer of Code 2025!** 🥳💻  
-We’re super excited to welcome contributors from **all across India & beyond 🌍** to collaborate, build, and grow **AgentOS** together.  
+**AgentOS is officially part of GirlScript Summer of Code 2025!**
+We’re super excited to welcome contributors from **all across India & beyond** to collaborate, build, and grow **AgentOS** together.  
 
 GSSoC is **India’s largest 3-month long open-source program**, designed to:  
 - 🌱 Help developers **learn, build & grow** through real-world projects  
@@ -59,9 +57,7 @@ GSSoC is **India’s largest 3-month long open-source program**, designed to:
 - 🤝 Foster **collaborative coding** & teamwork  
 - 🎁 Reward contributors with **certificates, swag, and recognition**  
 
----
-
-### 🌈 Why join AgentOS @ GSSoC’25?  
+### Why join AgentOS @ GSSoC’25?  
 
 By contributing here, you’ll get to:  
 - ✨ Improve your **AI, automation & voice assistant skills**  
@@ -69,16 +65,13 @@ By contributing here, you’ll get to:
 - 🏆 Showcase your contributions & get recognized  
 - 📜 Earn **certificates & swags** while learning!  
 
----
+<!--line-->
+<img src="https://www.animatedimages.org/data/media/562/animated-line-image-0184.gif" width="1920" />
 
 ### 💖 Call to Action  
 
-🎉 We **can’t wait to welcome new contributors** from GSSoC’25 into the **AgentOS family**!  
-Let’s **build, learn & grow — one commit at a time.** 🔥👩‍💻👨‍💻  
-
-<p>
-  Made with ❤️ for <b>GSSoC'25</b>
-</p>
+ We **can’t wait to welcome new contributors** from GSSoC’25 into the **AgentOS family**!  
+Let’s **build, learn & grow — one commit at a time.** 
 
 <!--line-->
 <img src="https://www.animatedimages.org/data/media/562/animated-line-image-0184.gif" width="1920" />
